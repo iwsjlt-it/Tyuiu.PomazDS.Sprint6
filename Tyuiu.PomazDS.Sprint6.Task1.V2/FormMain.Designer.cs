@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.groupBoxTask_PDS = new System.Windows.Forms.GroupBox();
+            this.pictureBoxTask_PDS = new System.Windows.Forms.PictureBox();
             this.groupBoxInput_PDS = new System.Windows.Forms.GroupBox();
             this.textBoxInputStopValue_PDS = new System.Windows.Forms.TextBox();
             this.textBoxInputStartValue_PDS = new System.Windows.Forms.TextBox();
@@ -40,22 +41,30 @@
             this.groupBoxOutput_PDS = new System.Windows.Forms.GroupBox();
             this.textBoxOutput_PDS = new System.Windows.Forms.TextBox();
             this.labelOutput_PDS = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBoxTask_PDS.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTask_PDS)).BeginInit();
             this.groupBoxInput_PDS.SuspendLayout();
             this.groupBoxOutput_PDS.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxTask_PDS
             // 
-            this.groupBoxTask_PDS.Controls.Add(this.pictureBox1);
+            this.groupBoxTask_PDS.Controls.Add(this.pictureBoxTask_PDS);
             this.groupBoxTask_PDS.Location = new System.Drawing.Point(12, 12);
             this.groupBoxTask_PDS.Name = "groupBoxTask_PDS";
             this.groupBoxTask_PDS.Size = new System.Drawing.Size(510, 344);
             this.groupBoxTask_PDS.TabIndex = 0;
             this.groupBoxTask_PDS.TabStop = false;
             this.groupBoxTask_PDS.Text = "Условие:";
+            // 
+            // pictureBoxTask_PDS
+            // 
+            this.pictureBoxTask_PDS.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxTask_PDS.Image")));
+            this.pictureBoxTask_PDS.Location = new System.Drawing.Point(32, 32);
+            this.pictureBoxTask_PDS.Name = "pictureBoxTask_PDS";
+            this.pictureBoxTask_PDS.Size = new System.Drawing.Size(452, 183);
+            this.pictureBoxTask_PDS.TabIndex = 0;
+            this.pictureBoxTask_PDS.TabStop = false;
             // 
             // groupBoxInput_PDS
             // 
@@ -154,15 +163,6 @@
             this.labelOutput_PDS.TabIndex = 0;
             this.labelOutput_PDS.Text = "Результат:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(32, 32);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(452, 183);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -173,14 +173,16 @@
             this.Controls.Add(this.buttonHelp_PDS);
             this.Controls.Add(this.groupBoxInput_PDS);
             this.Controls.Add(this.groupBoxTask_PDS);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FormMain";
             this.Text = "Спринт 6 | Таск 1 | Вариант 2 | Помаз Д.С";
             this.groupBoxTask_PDS.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTask_PDS)).EndInit();
             this.groupBoxInput_PDS.ResumeLayout(false);
             this.groupBoxInput_PDS.PerformLayout();
             this.groupBoxOutput_PDS.ResumeLayout(false);
             this.groupBoxOutput_PDS.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -198,7 +200,7 @@
         private System.Windows.Forms.GroupBox groupBoxOutput_PDS;
         private System.Windows.Forms.TextBox textBoxOutput_PDS;
         private System.Windows.Forms.Label labelOutput_PDS;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxTask_PDS;
     }
 }
 
